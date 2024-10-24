@@ -1,0 +1,43 @@
+/* EvaluateForm.css */
+
+.evaluate-form {
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Padding around the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-top: 30px; /* Space above the form */
+}
+
+.evaluate-form h2 {
+    color: #4CAF50; /* Green color for headings */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.evaluate-form textarea {
+    width: 100%; /* Full width */
+    height: 100px; /* Height for the textarea */
+    padding: 10px; /* Padding inside the textarea */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    resize: none; /* Disable resizing */
+    font-size: 14px; /* Font size */
+}
+
+.evaluate-form button {
+    background-color: #4CAF50; /* Green button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background change on hover */
+}
+
+.evaluate-form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.evaluate-form p {
+    margin-top: 15px; /* Space above the result text */
+    font-weight: bold; /* Bold text for the result */
+}

@@ -1,0 +1,118 @@
+/* App.css */
+body {
+    background-color: #eef2f3; /* Light background color for the entire body */
+    margin: 0; /* Remove default margin */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern font */
+}
+
+.App {
+    max-width: 800px; /* Set a max width for the app */
+    margin: 50px auto; /* Center the app horizontally */
+    padding: 20px; /* Add some padding */
+    background-color: #ffffff; /* White background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.App:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+h1 {
+    text-align: center; /* Center the header */
+    color: #4CAF50; /* Green color for the main title */
+    margin-bottom: 30px; /* Space below the header */
+    font-size: 2.5rem; /* Larger font size */
+    letter-spacing: 1px; /* Add space between letters */
+}
+
+h2 {
+    color: #333; /* Darker color for subsection headers */
+    margin-top: 20px; /* Space above subsection headers */
+    font-size: 1.8rem; /* Slightly larger font size */
+}
+
+button {
+    background-color: #4CAF50; /* Green button */
+    color: white; /* White text */
+    padding: 12px 20px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size for button */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+button:active {
+    transform: translateY(1px); /* Slightly depress on click */
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 15px; /* Padding for inputs */
+    margin: 10px 0; /* Space around inputs */
+    border: 1px solid #ddd; /* Light border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 1rem; /* Font size for inputs */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Add shadow on focus */
+}
+
+textarea {
+    height: 100px; /* Fixed height for text area */
+}
+
+.rule-list {
+    margin-top: 30px; /* Space above the rule list */
+}
+
+.rule-item {
+    background-color: #f9f9f9; /* Light background for rules */
+    padding: 15px; /* Padding for rule items */
+    border: 1px solid #ddd; /* Light border for rule items */
+    border-radius: 5px; /* Rounded corners for rule items */
+    margin-bottom: 15px; /* Space between rule items */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+.rule-item:hover {
+    background-color: #f1f1f1; /* Light grey on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.rule-item h3 {
+    margin: 0; /* Remove margin from headings in rules */
+    color: #333; /* Dark color for rule titles */
+}
+
+.rule-item p {
+    color: #666; /* Darker grey for rule descriptions */
+    font-size: 0.9rem; /* Smaller font size for descriptions */
+}
+
+.evaluate-section {
+    margin-top: 30px; /* Space above evaluation section */
+    background-color: #e8f5e9; /* Light green background */
+    padding: 15px; /* Padding for evaluation section */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #4CAF50; /* Green border */
+}
+
+.evaluate-section h2 {
+    color: #4CAF50; /* Green color for evaluation title */
+}
