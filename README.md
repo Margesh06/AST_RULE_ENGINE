@@ -126,22 +126,21 @@ CREATE TABLE rules (
    npm install
    ```
 
-4. **Create a file named database.js inside your config folder and add the following code:** 
-   ```
-// config/database.js
+4. **Create a file named `database.js` inside your `config` folder and add the following code:**
 
-const { Sequelize } = require('sequelize');
+   ```javascript
+   // config/database.js
 
-// Initialize a new instance of Sequelize for PostgreSQL
-const sequelize = new Sequelize('db_name', 'username', 'password', { 
-    host: 'localhost',
-    dialect: 'postgres',
-});
+   const { Sequelize } = require('sequelize');
 
-// Export the sequelize instance for use in other parts of the application
-module.exports = sequelize;
+   // Initialize a new instance of Sequelize for PostgreSQL
+   const sequelize = new Sequelize('db_name', 'username', 'password', { 
+       host: 'localhost',
+       dialect: 'postgres',
+   });
 
-   ```
+   // Export the sequelize instance for use in other parts of the application
+   module.exports = sequelize;
 
 
 5. **Start the Backend Server**
