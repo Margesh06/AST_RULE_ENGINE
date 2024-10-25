@@ -104,6 +104,57 @@ CREATE TABLE rules (
 ## Sample Rules
 - **Rule 1**: `((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)`
 - **Rule 2**: `((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)`
+  
+
+  ## Setup and Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Margesh06/AST_RULE_ENGINE.git
+   cd rule-engine-app
+   ```
+
+2. **Install Backend Dependencies**
+   ```bash
+   cd backend
+   npm install
+   ```
+
+3. **Install Frontend Dependencies**
+   ```bash
+   cd frontend
+   npm install
+   ```
+
+4. **Create a file named database.js inside your config folder and add the following code:** 
+   ```
+// config/database.js
+
+const { Sequelize } = require('sequelize');
+
+// Initialize a new instance of Sequelize for PostgreSQL
+const sequelize = new Sequelize('db_name', 'username', 'password', { 
+    host: 'localhost',
+    dialect: 'postgres',
+});
+
+// Export the sequelize instance for use in other parts of the application
+module.exports = sequelize;
+
+   ```
+
+
+5. **Start the Backend Server**
+   ```bash
+   cd backend
+   node server.js
+   ```
+
+6. **Start the Frontend Development Server**
+   ```bash
+   cd frontend
+   npm start
+   ```
 
 ## API Design
 ### Endpoints
